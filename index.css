@@ -1,0 +1,41 @@
+#content{
+    display: grid;
+    max-width: 960px;
+    margin: 0px auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, minmax(150px, auto));
+    grid-gap: 10px;
+}
+
+p{
+    text-align: center;
+}
+header{
+    grid-column: 1/7;
+    background-color: bisque;
+}
+main{
+    grid-column: 1/4;
+    grid-row: 2/6;
+    background-color: rgb(255, 240, 246);
+    box-sizing: border-box;
+}
+figure{
+    size: cover;
+    box-sizing: border-box;
+}
+aside{
+    grid-column: 4/7;
+    grid-row: 2/4;
+    background-color: cadetblue;
+}
+aside.second{
+    grid-column: 4/7;
+    grid-row: 4/6;
+    background-color: rgb(160, 95, 151);
+}
+footer{
+    grid-column: 1/7;
+    grid-row: 6/7;
+    background-color: darkslategray;
+}
